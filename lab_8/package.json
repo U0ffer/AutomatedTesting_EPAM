@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha -r ts-node/register test/*.spec.ts",
     "start": "node index.js"
   },
   "author": {
@@ -15,8 +15,17 @@
     "node": ">=6.9.1",
     "npm": ">=3.10.8"
   },
+  "type": "commonjs",
   "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/jest": "^29.2.1",
+    "@types/mocha": "^10.0.0",
+    "chai": "^4.2.0",
+    "i": "^0.3.7",
     "mocha": "^6.2.0",
-    "chai": "^4.2.0"
+    "npm": "^8.19.2"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
   }
 }
