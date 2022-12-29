@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All tests" verbose="2">
+    <test name="All tests" preserve-order="true">
+        <packages>
+            <package name="com.example.autotests.tests" />
+        </packages>
+    </test>
+</suite>
